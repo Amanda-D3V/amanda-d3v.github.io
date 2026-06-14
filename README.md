@@ -35,5 +35,6 @@ Aqui estão as linguagens e frameworks em que venho aprofundando os meus estudos
 
 ### 📫 Como me encontrar
 
-- 💼 **LinkedIn:** [Seu Link do LinkedIn Corrigido Aqui]
+- 💼 **LinkedIn:** (www.linkedin.com/in/amanda-alves-ti)
+
 - 🌐 **Portfólio:** [amanda-d3v.github.io](https://amanda-d3v.github.io)
