@@ -1,1 +1,295 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Isabela | Software Developer</title>
+    <style>
+        /* Variáveis de Cores para um Dark Mode Elegante */
+        :root {
+            --bg-principal: #121212;
+            --bg-card: #1e1e1e;
+            --texto-principal: #e0e0e0;
+            --texto-secundario: #a0a0a0;
+            --cor-destaque: #64ffda; /* Tom esmeralda/neon para detalhes */
+            --cor-borda: #2d2d2d;
+            --fonte: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-principal);
+            font-family: var(--fonte);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--cor-destaque);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            filter: brightness(1.2);
+        }
+
+        /* Container de Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            border-bottom: 1px solid var(--cor-borda);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background-color: rgba(18, 18, 18, 0.9);
+            backdrop-filter: blur(5px);
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        /* Seção Hero (Apresentação) */
+        .hero {
+            padding: 80px 0;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: var(--cor-destaque);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--texto-secundario);
+            max-width: 600px;
+        }
+
+        /* Seções Gerais */
+        .secao {
+            padding: 60px 0;
+            border-top: 1px solid var(--cor-borda);
+        }
+
+        .titulo-secao {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .titulo-secao::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--cor-destaque);
+        }
+
+        /* Lista de Tecnologias */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background-color: var(--bg-card);
+            border: 1px solid var(--cor-borda);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--texto-principal);
+        }
+
+        /* Grid de Projetos */
+        .projetos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .projeto-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--cor-borda);
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .projeto-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--cor-destaque);
+        }
+
+        .projeto-card h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .projeto-card p {
+            color: var(--texto-secundario);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .projeto-links {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--cor-borda);
+            color: var(--texto-secundario);
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            nav ul { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">AMANDA.DEV</div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Amanda Isabela</h1>
+            <h2>Desenvolvedora de Software</h2>
+            <p>
+                Graduanda em Análise e Desenvolvimento de Sistemas. Focada em construir soluções estruturadas, eficientes e visualmente consistentes, priorizando a arquitetura do código e a experiência do utilizador.
+            </p>
+            <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">React Native</span>
+                <span class="tag">C</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            <p>
+                A minha abordagem ao desenvolvimento de software baseia-se na decomposição de problemas complexos em etapas lógicas e bem estruturadas. Dedico-me ao estudo aprofundado de frameworks robustos para garantir que cada aplicação possua uma base técnica sólida e escalável. 
+            </p>
+            <p style="margin-top: 15px;">
+                Valorizo a atenção aos detalhes, desde a organização da lógica do backend até o design limpo e focado em interfaces no modo escuro.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <div class="container">
+            <h2 class="titulo-secao">Projetos em Destaque</h2>
+            <div class="projetos-grid">
+                
+                <div class="projeto-card">
+                    <h3>ANota</h3>
+                    <p>Aplicação móvel desenvolvida para otimizar a gestão de despesas através da leitura e extração automatizada de dados de códigos QR de documentos fiscais.</p>
+                    <div class="projeto-links">
+                        <a href="#">Repositório &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Pequenos Hábitos</h3>
+                    <p>Sistema web estruturado para a gestão e acompanhamento de rotinas diárias, utilizando um painel administrativo customizado e intuitivo.</p>
+                    <div class="projeto-links">
+                        <a href="#">Repositório &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Time Buddy</h3>
+                    <p>Software desenvolvido para a monitorização contínua de atividades em segundo plano, focado em otimização de tempo e análise de produtividade.</p>
+                    <div class="projeto-links">
+                        <a href="#">Repositório &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao">
+        <div class="container" style="text-align: center;">
+            <h2 class="titulo-secao">Vamos Conectar?</h2>
+            <p style="color: var(--texto-secundario); margin-bottom: 20px;">
+                Estou sempre aberta a discussões técnicas e novas oportunidades de desenvolvimento.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 25px;">
+                <a href="https://github.com/Amanda-D3V" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#">E-mail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Amanda Isabela. Projetado com foco em desempenho e sem atalhos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
