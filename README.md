@@ -1,40 +1,27 @@
-# Olá, eu sou a Amanda Isabela! 👋👩🏻‍💻
+# amanda-d3v.github.io
 
-Sou estudante do curso tecnólogo em Análise e Desenvolvimento de Sistemas. Tenho foco em construir soluções estruturadas e eficientes, priorizando o entendimento profundo da arquitetura do código e dos fundamentos das tecnologias, em vez de recorrer a atalhos ou soluções *low-code*. 
+Código do meu portfólio pessoal, publicado com GitHub Pages.
 
-Acredito que o caminho do aprendizado técnico sólido é o melhor preparo para as demandas reais do mercado.
+🌐 **Acesse:** [amanda-d3v.github.io](https://amanda-d3v.github.io)
 
-### 💻 Tecnologias e Ferramentas
-Aqui estão as linguagens e frameworks em que venho aprofundando os meus estudos e construindo aplicações:
+## Sobre
 
-<div style="display: inline_block"><br>
-  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="C" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
-  <img align="center" alt="Django" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg">
-  <img align="center" alt="React Native" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-</div>
+Página única e leve, feita só com **HTML e CSS**, sem frameworks. Reúne:
 
----
+- uma apresentação rápida sobre mim
+- as tecnologias que uso
+- meus projetos em destaque
+- meus contatos
 
-### 🚀 Projetos em Destaque
+## Como rodar localmente
 
-*   📱 **ANota:** Aplicação mobile desenvolvida em React Native para gestão inteligente de despesas, utilizando extração de dados através da leitura de QR codes.
-*   ⚙️ **Pequenos Hábitos:** Sistema web construído com Django para gestão e acompanhamento de rotinas diárias, focado na organização e interface administrativa.
-*   ⏱️ **Time Buddy:** Aplicação desktop desenvolvida em Python projetada para monitorar e gerenciar o tempo investido em diferentes atividades no computador.
+```bash
+git clone https://github.com/Amanda-D3V/amanda-d3v.github.io.git
+cd amanda-d3v.github.io
+```
 
----
+Depois é só abrir o `index.html` no navegador.
 
-### 📊 Estatísticas do GitHub
+## Deploy
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Amanda-D3V&show_icons=true&theme=dracula&hide_border=true&include_all_commits=true&count_private=true" alt="Estatísticas da Amanda" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amanda-D3V&layout=compact&theme=dracula&hide_border=true" alt="Linguagens mais usadas" />
-</p>
-
----
-
-### 📫 Como me encontrar
-
-- 💼 **LinkedIn:** www.linkedin.com/in/amanda-alves-ti
-
-- 🌐 **Portfólio:** [amanda-d3v.github.io](https://amanda-d3v.github.io)
+O site é publicado automaticamente pelo **GitHub Pages** a partir da branch `main`.
